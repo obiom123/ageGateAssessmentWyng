@@ -3,7 +3,7 @@ const age21 = 662695446000;
 const age20 = 630720000000;
 const age19 = 599184000000;
 const age18 = 567648000000;
-//If the age requirment is lowered from 21, simply use alternative age variable provided above in the If statments below.
+//If the age requirment is lowered from 21, simply use an alternative age variable provided above in the If statments below.
 
 function mySubmitFunction(e) {
   let day = document.getElementById("dayValue").value;
