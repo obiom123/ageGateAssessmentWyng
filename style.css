@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: black;
+  line-height:1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-family: 'Clicker Script', cursive;
+}
+
+#container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container::before {
+  background-image: url('./images/beerGlasses.jpg');
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  opacity: 0.4;
+}
+
+#container::after {
+  background-color: #563d7c;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#subContainer {
+  color: #fff;
+  text-shadow: #343a40 2px 2px;
+  min-width: 100%;
+  min-height: 12em;
+  position: relative;
+}
+
+#subContainer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  min-width: 100%;
+  min-height: 12em;
+  z-index: -1;
+  opacity: 0.4;
+  background-color: #343a40;
+}
+
+#subContainer{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#submitAgeForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#over21Button {
+  visibility: hidden;
+  height: 0%;
+  border:none;
+  border-radius: 5px;
+  background: none;
+  font-size: 25px;
+  color: #6e15f4;
+}
+#over21Button:hover {
+  color:white; 
+  cursor: pointer;
+}
+
+#under21Button {
+  visibility: hidden;
+  height: 0%;
+  border:none;
+  border-radius: 5px;
+  background: none;
+  font-size: 25px;
+  color: rgb(254, 165, 0);
+}
+
+#under21Button:hover {
+  color:white; 
+  cursor: pointer;
+
+}
+
+#submitButton {
+  visibility: visible;
+  border:none;
+  border-radius: 5px;
+  background-color: rgba(0,0,0, .25);
+  font-size: 25px;
+}
+
+#submitButton:hover {
+  background:grey;
+  color:white; 
+  border:solid 2px darkgray;
+  cursor: pointer;
+
+}
+#notOfAgeEnterButton {
+  visibility: hidden;
+}
+
+.allDropDowns{
+  background: #343a40;
+  color: #fff;
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px rgba(0,0,0, .5);
+  -webkit-appearance: button;
+  outline: none;
+}
